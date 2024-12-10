@@ -1,6 +1,6 @@
 class GameObject
 {
-    constructor(_id=`#default`)
+    constructor(_id=`#ytlogo`)
     {     
     /*Object properties (or attributes)*/
     //object position
@@ -36,7 +36,7 @@ class GameObject
         this.img.sy=0
         this.img.sw=this.img.src.width
         this.img.sh=this.img.src.height 
-    }
+    } 
 
     setImage(_id)
     {

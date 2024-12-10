@@ -6,6 +6,10 @@ var a = false;
 var s = false;
 var d = false;
 var sp = false;
+var right = false;
+var left = false;
+var up = false;
+
 
 /*---Key Press Code-----------*/
 
@@ -18,6 +22,9 @@ function press(e)
     if(e.keyCode == 65){a = true;}
     if(e.keyCode == 68){d = true;}
     if(e.keyCode == 32){sp = true;}
+    if(e.keyCode == 39){right = true;}
+    if(e.keyCode == 37){left = true;}
+    if(e.keyCode == 38){up = true;}
 }
 
 /*---Key Release Code-----------*/
@@ -29,20 +36,16 @@ function release(e)
     if(e.keyCode == 65){a = false;}
     if(e.keyCode == 68){d = false;}
     if(e.keyCode == 32){sp = false;}
+    if(e.keyCode == 39){right = false;}
+    if(e.keyCode == 37){left = false;}
+    if(e.keyCode == 38){up = false;}
 }
 
 var mouse = {x:0 ,y:0, pressed:false}
-
-document.addEventListener(`mousemove`, move)
 document.addEventListener(`mouseup`, rest)
 document.addEventListener(`mousedown`, action)
 
-function move(e)
-{
-    const rect = c.getBoundingClientRect()
-    mouse.x = e.clientX - rect.left
-    mouse.y = e.clientY - rect.top
-}
+
 function action(e)
 {
     mouse.pressed = true;

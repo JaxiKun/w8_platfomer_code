@@ -15,7 +15,7 @@ canvas{
         NOTE: it should only require you to change the file name not the path. 
         NOTE: This path uses ../ to navigate up one level into the root folder where the "images" folder is located.
     */
-    /*background-image: url(../images/mrt.jpg);*/
+        background-image: url(../images/oldythomepage.jpg);
 }
 #instructions{
     width:300px;
